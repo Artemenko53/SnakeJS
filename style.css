@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#de2192),
+    to(#bee591)
+  );
+  background: -webkit-linear-gradient(#de2192, #bee591);
+  background: -moz-linear-gradient(#de2192, #bee591);
+  background: -o-linear-gradient(#de2192, #bee591);
+  background: linear-gradient(#de2192, #bee591);
+}
+
+h1 {
+  font-size: 80px;
+  font-family: "Honk", system-ui;
+}
+
+.button {
+  padding: 1rem 2rem;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  font-size: 36px;
+  font-family: "Honk", system-ui;
+  cursor: pointer;
+  border-color: #e66465;
+  background-color: antiquewhite;
+  -webkit-animation-name: blink;
+  -moz-animation-name: blink;
+  -o-animation-name: blink;
+  animation-name: blink;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.restart {
+  display: none;
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  animation: none;
+}
+
+.gameBoard {
+  width: 505px;
+  height: 505px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  background-color: tomato;
+  -webkit-box-shadow: 10px 5px 5px rgb(82, 76, 76);
+  -moz-box-shadow: 10px 5px 5px rgb(82, 76, 76);
+  box-shadow: 10px 5px 5px rgb(82, 76, 76);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(194, 190, 190);
+  border: 1px solid black;
+}
+
+.food {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.snake {
+  background-repeat: no-repeat;
+}
+
+dialog {
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+dialog button {
+  padding: 1rem 2rem;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  font-size: 24px;
+  font-family: "Honk", system-ui;
+  cursor: pointer;
+  border-color: #e66465;
+  background-color: antiquewhite;
+  margin: 0 auto;
+  display: block;
+}
+
+dialog h2 {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+dialog form {
+  margin: 0 auto;
+}
